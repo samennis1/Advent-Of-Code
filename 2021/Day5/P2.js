@@ -43,45 +43,6 @@ for(let line of inputs) {
     }
 }
 
-//=========================================================================================================
-// ORIGINAL CONCEPT, TAKES WAY TOO LONG TO RUN
-
-// let largestX = listOfPoints.reduce((a,b) => {
-//     return a > b.x ? a : b.x
-// })
-
-// let largestY = listOfPoints.reduce((a, b) => {
-//     return a > b.y ? a : b.y
-// })
-
-
-// console.log("LARGEST X", largestX)
-// console.log("LARGEST Y", largestY)
-
-// for(let i = 0; i <= largestY; i++) {
-//     rows.push([]);
-//     let checkPoints = listOfPoints.filter(a => (a.y == i));
-//     console.log(checkPoints.length)
-//     if(!checkPoints.length) continue;
-//     for(let j = 0; j < largestX+1; j++) {
-//         let checkPoint = listOfPoints.filter(a => a.x == j && a.y == i);
-//         if(!checkPoints.length) continue;
-//         console.log(i, j, checkPoint)
-        
-//         if(checkPoint.length) {
-//             rows[i][j] = checkPoint.length >= 2 ? 2 : 1;
-//             let index = listOfPoints.find(a => a.y == i && a.x == j);
-//             listOfPoints = listOfPoints.splice(index);
-//         } else {
-//             rows[i][j] = "."
-//         }
-//     }
-// }
-//=========================================================================================================
-
-//=========================================================================================================
-// BETTER CONCEPT
-
 let endPoints = {};
 
 for(let point of listOfPoints) {
