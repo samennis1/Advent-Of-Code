@@ -1,5 +1,5 @@
 const fs = require("fs");
-let inputs = fs.readFileSync("../input.txt", 'utf-8').trim().split("\n");
+let inputs = fs.readFileSync("input.txt", 'utf-8').trim().split("\n");
 
 let depth = 0;
 let hor = 0;
