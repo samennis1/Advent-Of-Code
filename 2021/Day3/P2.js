@@ -1,6 +1,6 @@
 const fs = require("fs")
 //parse commands
-let diagnostics = fs.readFileSync("../input.txt", "utf8").split("\r\n");
+let diagnostics = fs.readFileSync("input.txt", "utf8").split("\r\n");
 
 let diag = [];
 let co2 = [];
