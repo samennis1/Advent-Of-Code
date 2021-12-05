@@ -1,5 +1,5 @@
 const fs = require("fs");
-let inputs = fs.readFileSync("../input.txt", 'utf-8').trim().split("\r").filter(a => a !== "");
+let inputs = fs.readFileSync("input.txt", 'utf-8').trim().split("\r").filter(a => a !== "");
 for(let i=0; i < inputs.length; i++) {inputs[i] = parseInt(inputs[i].replace("\n", "").trim())}
 let greater = 0;
 

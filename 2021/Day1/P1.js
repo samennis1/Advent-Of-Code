@@ -1,5 +1,5 @@
 const fs = require("fs");
-let inputs = fs.readFileSync("../input.txt", 'utf-8').trim().split("\n").filter(a => a !== "");
+let inputs = fs.readFileSync("input.txt", 'utf-8').trim().split("\n").filter(a => a !== "");
 console.log(inputs.length);
 let previous;
 let greater = 0;
