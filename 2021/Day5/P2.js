@@ -13,9 +13,9 @@ for(let line of inputs) {
     let x2 = parseInt(endLine.split(",")[0]);
     let y2 = parseInt(endLine.split(",")[1]);
     
-    let isDiagnoal = x !== x2 && y !== y2;
+    let isDiagonal = x !== x2 && y !== y2;
     
-    if(isDiagnoal) {
+    if(isDiagonal) {
         console.log("BASE", {x, y}, {x2, y2})
         let dist = (Math.max(x, x2) - Math.min(x, x2)) + 1;
         let lowestPoint = Math.max(x, x2) == x2 ? {x, y} : {x: x2, y: y2}
