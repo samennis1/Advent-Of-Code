@@ -1,5 +1,5 @@
 const fs = require("fs");
-let inputs = fs.readFileSync("../input.txt", "utf8").split("\r\n").map(a => a.replace("  ", " "));
+let inputs = fs.readFileSync("input.txt", "utf8").split("\r\n").map(a => a.replace("  ", " "));
 let drawnNumbers = [];
 let wonBoards = [];
 let boards = [];

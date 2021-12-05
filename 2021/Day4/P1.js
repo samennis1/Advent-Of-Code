@@ -1,5 +1,5 @@
 const fs = require("fs");
-let inputs = fs.readFileSync("../input.txt", "utf8").split("\r\n").map(a => a.replace("  ", " "));
+let inputs = fs.readFileSync("input.txt", "utf8").split("\r\n").map(a => a.replace("  ", " "));
 let drawnNumbers = [];
 let boards = [];
 
@@ -41,6 +41,8 @@ function winner(board, num) {
     let total = 0;
     for(let i = 0; i < board.length; i++) {
         board[i] = board[i].filter(a => a !== "-");
+        if(!board[i].length) continue;
+        console.log("LINE", board[i])
         total = total + board[i].reduce((a, b) => a + parseInt(b), 0)
     }
     console.log(total, num);
