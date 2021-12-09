@@ -63,16 +63,12 @@ for(let i = 0; i <= largestY; i++) {
     if(!checkPoints.length) continue;
     for(let j = 0; j < largestX+1; j++) {
         let checkPoint = listOfPoints.filter(a => a.x == j && a.y == i);
-        if(!checkPoints.length) continue;
+        if(!checkPoint.length) continue;
         console.log(i, j, checkPoint)
         
-        if(checkPoint.length) {
-            rows[i][j] = checkPoint.length >= 2 ? 2 : 1;
-            let index = listOfPoints.find(a => a.y == i && a.x == j);
-            listOfPoints = listOfPoints.splice(index);
-        } else {
-            rows[i][j] = "."
-        }
+        rows[i][j] = checkPoint.length >= 2 ? 2 : 1;
+        let index = listOfPoints.find(a => a.y == i && a.x == j);
+        listOfPoints = listOfPoints.splice(index);
     }
 }
 
