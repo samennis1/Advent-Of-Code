@@ -25,8 +25,8 @@ function solve(array) {
     let epBit = gammaBit == 1 ? 0 : 1;
 
 
-    gamma = gamma + gammaBit;
-    ep = ep + epBit;
+    gamma += gammaBit;
+    ep += epBit;
 }
 
 console.log(parseInt(parseInt(gamma, 2) * parseInt(ep, 2)))
